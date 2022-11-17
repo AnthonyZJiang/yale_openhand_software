@@ -3,19 +3,25 @@ Software for Yale Openhand
 
 # Install
 ```shell
-$git clone 
-$cd DynamixelSDK
-$python setup.py install
+$git clone https://github.com/tmxkn1/yale_openhand_software.git
+$cd yale_openhand_software/DynamixelSDK
+
+### Make sure you have Python 3.6+
+python --version
+### or 
+python3 --version
+
+$sudo python3 setup.py install
 ```
 
 # Usage
 ```shell
-$cd model_t
-$python start.py -p=/dev/ttyUSB0
+$cd ../model_t
+$python3 start.py -p=/dev/ttyUSB0
 ```
 To see a list of arguments:
 ```shell
-$python start.py -h
+$python3 start.py -h
 
 usage: python start.py [-p=<port_name>] [-b=<baudrate>] [-i=<dxl_id>] [-c=<current_limit>]
    or: python start.py -h | --help
